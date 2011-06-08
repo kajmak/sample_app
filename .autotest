@@ -1,0 +1,7 @@
+require 'autotest/growl'
+
+Autotest.add_hook :initialize do |autotest|
+  autotest.add_mapping(/^spec\/.*_spec\.rb$/) do |file|
+    file
+  end
+end
