@@ -1,5 +1,9 @@
 module ApplicationHelper
-   # Return a title on a per-page basis.			# Documentation comment
+   def logo
+   	  logo = image_tag("logo.png", :alt => "Sample App", :class => "round")
+   	  end
+	
+	 # Return a title on a per-page basis.			# Documentation comment
    def title							# Method definition
       base_title = "Twitter"				# Variable assignment
       if @title.nil?						# Boolean test for nil
